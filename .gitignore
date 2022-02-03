@@ -1,0 +1,6 @@
+# Archivos del sistema
+package-lock.json
+package.json
+
+#carpetas
+node_modules
