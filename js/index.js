@@ -1,6 +1,12 @@
 let carrito=[];
 let info = false;
 let total = 0;
+let enCarrito = document.getElementsByClassName("enCarrito");
+let verInfoText = document.getElementsByClassName("verInfoText");
+let infoButton1 = document.getElementById("infoButton-1");
+let infoButton2 = document.getElementById("infoButton-2");
+let infoButton3 = document.getElementById("infoButton-3");
+let infoButton4 = document.getElementById("infoButton-4");
 
 const Productos = [
   {producto: 'Jordan Jumpman', precio:15000},
@@ -9,11 +15,10 @@ const Productos = [
   {producto: 'Lebron Lakers', precio:11000}
 ];
 
-function Mostrate (arr,fn){
-    for (const el of arr){
-        fn('Producto ' +': '+ el.producto + ' precio: ' + el.precio);
-    }
-}
+infoButton1.onmousedown = function(){verInfoText[0].innerHTML = "Precio: " + Productos[0].precio}
+infoButton2.onmousedown = function(){verInfoText[1].innerHTML = "Precio: " + Productos[1].precio}
+infoButton3.onmousedown = function(){verInfoText[2].innerHTML = "Precio: " + Productos[2].precio}
+infoButton4.onmousedown = function(){verInfoText[3].innerHTML = "Precio: " + Productos[3].precio}
 
 
 setTimeout(() => {
@@ -26,21 +31,25 @@ setTimeout(() => {
                     alert('Se agrego: ' + Productos[0].producto);
                     console.log('Se agrego:  ' + Productos[0].producto);
                     total = total + Productos[0].precio;
+                    enCarrito[0].innerHTML = "Agregado al carrito";
                     break;
                 case '2':
                     alert('Se agrego: ' + Productos[1].producto);
                     console.log('Se agrego:  ' + Productos[1].producto);
                     total = total + Productos[1].precio;
+                    enCarrito[1].innerHTML = "Agregado al carrito";
                     break;
                 case '3':
                     alert('Se agrego: ' + Productos[2].producto);
                     console.log('Se agrego:  ' + Productos[2].producto);
                     total = total + Productos[2].precio;
+                    enCarrito[2].innerHTML = "Agregado al carrito";
                     break;
                 case '4':
                     alert('Se agrego: ' + Productos[3].producto);
                     console.log('Se agrego:  ' + Productos[3].producto);
                     total = total + Productos[3].precio;
+                    enCarrito[3].innerHTML = "Agregado al carrito";
                     break;
                 default:
                     alert('Dicho producto no se encuentra en nuestro catalogo');
@@ -53,5 +62,4 @@ setTimeout(() => {
         alert('Gracias por su visita');
     }
   }, 8000);
-
 
