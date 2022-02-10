@@ -63,3 +63,18 @@ setTimeout(() => {
     }
   }, 8000);
 
+let miForm = document.getElementById("formCuotas");
+miForm.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e) {
+    e.preventDefault();
+    let form = e.target;
+    console.log(form.children[1].value);
+    console.log(form.children[3].value);
+    console.log(form.children[5].value);
+
+    let coutas = form.children[5].value;
+
+    alert("Se pagara: $" + total + " en: " + coutas + " coutas");
+};
+
