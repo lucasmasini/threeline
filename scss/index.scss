@@ -1,24 +1,94 @@
-body{
-    overflow: hidden;
-}
-main {
+body {
     height: 90vh;
     width: 100%;
     margin: 0px;
-    background-image: url("../images/fondo.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
-	background-attachment: fixed;
-    opacity: 1;
 }
-nav a {
+nav {
+    a {
     text-decoration: none;
+    transition: all .4s;
+    }
+    #search {
+        width: 300px;
+    }
 }
-.cardsContainer{
-    margin: 2em;
-    padding: 1em;
+.navbar a:hover {
+    font-size: 1.06em;
+    text-decoration: underline;
 }
+
+.principalIndex{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 92vh;
+    .principalIndexImg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }    
+    .principalIndexText-1{
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+        color: rgb(216, 240, 151);
+        font-size: 60px;
+    }
+    // .principalIndexText-2{
+    //     position: absolute;
+    //     justify-self: center;
+    //     align-self: start;
+    //     color: rgb(216, 240, 151);
+    //     font-size: 60px;
+    // }
+    .principalIndexArrow{
+        width: 200px;
+        height: 130px;
+        position: absolute;
+        margin-left: 43%;
+        align-self: end;
+        color: rgb(216, 240, 151);
+        font-size: 60px;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: .7s;
+        }
+        img:hover {
+            transform: translate(0px,-1em);	
+        }
+    }
+
+}
+
+.carousel-item{
+    height: 400px;
+    width: 100%;
+    img {
+        padding: .7em;
+        height: 97%;
+        width: 60%; 
+        border-radius: 5%;
+}
+}
+.card-body-index{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    .carouselButton {
+        width: 200px;
+        button {
+            width: 100%;
+            height: 40%;
+        }
+    }
+}
+
 .proximamente {
     width: 100%;
     height: 75%;
@@ -28,7 +98,7 @@ nav a {
     align-items: center;
         h1 {
         font-size: 5em;
-        color: rgb(231, 225, 184);
+        color: rgb(124, 109, 10);
     }
 }
 
@@ -48,5 +118,37 @@ nav a {
     h3 {
         color: white;
         text-align: center;
+    }
+}
+
+.bodyProducts {
+    margin: 0px;
+    background-image: url("../images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.cardsContainer{
+    margin: 2em;
+    padding: 1em;
+    .card {
+        height: 100%;
+    }
+}
+.formDiv {
+    display: flex;
+    justify-content: center;
+
+}
+.finishButton {
+    width: 100%;
+    height: 180px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    #finish {
+        width: 230px;
+        height: 130px;
     }
 }
