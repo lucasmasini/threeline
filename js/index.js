@@ -23,22 +23,22 @@ let productsJSON = JSON.stringify(products);
 localStorage.setItem("productos", productsJSON);
 
 carritoButton1.onmousedown = function(){
-  enCarrito[0].innerHTML = "Agregado al carrito";
+  handleClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[0].price;
 }
 carritoButton2.onmousedown = function(){
-  enCarrito[1].innerHTML = "Agregado al carrito";
+  handleClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[1].price; 
 }
 carritoButton3.onmousedown = function(){
-  enCarrito[2].innerHTML = "Agregado al carrito";
+  handleClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[2].price; 
 }
 carritoButton4.onmousedown = function(){
-  enCarrito[3].innerHTML = "Agregado al carrito";
+  handleClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[3].price; 
 }
@@ -69,3 +69,19 @@ finishButton.onmousedown = function mostrarTotal(){
   alert(finish[0] + ", el total de su compra es: $" + total + " a pagar en " + finish[2] + " coutas")
 }
 
+function handleClick() {
+  Toastify({
+      text: "Agregado al carrito",
+      duration: 1800,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: false,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+      background: "linear-gradient(to right, #c50101, #a40009, #83000b, #630008, #440000)",
+      },
+      onClick: function(){} // Callback after click
+  }).showToast();
+}

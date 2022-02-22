@@ -10,6 +10,7 @@
     <title>Threeline</title>
     <meta name = "keywords" content="basket, basquet, nba, basquetball, basketnall, Lakers, Nets">
     <meta name="description" content="Somos una empresa que se dedica a acercar al usuario la magia del basquet y de la NBA. Poder sumergirse en este hermoso deporte y conseguir la equipacion de tu equipo o jugador favorito">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body class="bodyProducts">
     <!--INSERTANDO e INICIANDO AOS-->
@@ -30,7 +31,7 @@
 		  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
 		</symbol>
 	</svg>
-  <nav class="navbar navbar-dark border-bottom bg-dark d-flex justify-content-center">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
     <div class="navLinks text-light">
       <a class="navbar-link text-reset px-5 pt-2" href="../index.html">Inicio</a>
       <a class="navbar-link text-reset px-5 pt-2" href="products.html">Productos</a>
@@ -40,7 +41,7 @@
     <div class="navSearch ms-4">
       <form class="d-flex justify-items-end ps-3" id="search">
           <input class="form-control" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+          <button class="btn btn-outline-danger ms-2" type="submit">Buscar</button>
       </form>
     </div>
   </nav>  
@@ -53,10 +54,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Jordan Jumpman 2020</h5>
                     <p class="card-text">Jordan Jumpman 2020. Sin estrenar!</p>
-                    <button id="infoButton-1" class="btn btn-outline-success" type="submit"> Ver info</button>
+                    <button id="infoButton-1" class="btn btn-outline-light" type="submit"> Ver info</button>
                     <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-1" class="btn btn-outline-success" type="submit"> Agregar al Carrito</button>
-                    <p class="enCarrito fs-5 pt-2"></p>
+                    <button id="carritoButton-1" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -66,10 +66,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Kyrie 7</h5>
                     <p class="card-text">Kyrie 7 2021. Sin estrenar!</p>
-                    <button id="infoButton-2" class="btn btn-outline-success" type="submit"> Ver info</button>
+                    <button id="infoButton-2" class="btn btn-outline-light" type="submit"> Ver info</button>
                     <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-2" class="btn btn-outline-success" type="submit"> Agregar al Carrito</button>
-                    <p class="enCarrito fs-5 pt-2"></p>
+                    <button id="carritoButton-2" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -79,10 +78,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Pelota Wilson</h5>
                     <p class="card-text">Pelota de basquet Wilson. Oficial de partidos NBA</p>
-                    <button id="infoButton-3" class="btn btn-outline-success" type="submit"> Ver info</button>
+                    <button id="infoButton-3" class="btn btn-outline-light" type="submit"> Ver info</button>
                     <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-3" class="btn btn-outline-success" type="submit"> Agregar al Carrito</button>
-                    <p class="enCarrito fs-5 pt-2"></p>
+                    <button id="carritoButton-3" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -92,10 +90,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Remera Lakers Lebron James</h5>
                     <p class="card-text">Remera titular de Lebron James en los Lakers 2021.</p>
-                    <button id="infoButton-4" class="btn btn-outline-success" type="submit"> Ver info</button>
+                    <button id="infoButton-4" class="btn btn-outline-light" type="submit"> Ver info</button>
                     <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-4" class="btn btn-outline-success" type="submit"> Agregar al Carrito</button>
-                    <p class="enCarrito fs-5 pt-2"></p>
+                    <button id="carritoButton-4" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -110,14 +107,14 @@
               <input type="text" class="form-control" id="exampleInputurname">
               <label for="exampleInputPassword1" class="form-label text-light">Cantidad de Coutas (1-12)</label>
               <input type="number" max="12" min="1" class="form-control" id="exampleInputPassword1">
-              <input type="submit" value="Enviar" class="btn btn-outline-success">
+              <input type="submit" value="Enviar" class="btn btn-outline-light">
           </form>
-        </div>
+        </div>  
         <div class="finishButton">
-          <button id="finish" class="btn btn-success fs-5 type="submit">Finalizar compra</button>
+          <button id="finish" class="btn btn-danger fs-5 type="submit">Finalizar compra</button>
         </div>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 border-top bg-dark bg-opacity-100">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 bg-dark bg-opacity-100">
 		<div class="col-md-4 d-flex align-items-center ps-4">
 			<span class="text-muted fs-6 text-light">&copy; Desarrolado por Lucas Masini</span>
 		</div>
@@ -128,5 +125,6 @@
 		</ul>
 	</footer>
   <script src="../js/index.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
