@@ -1,12 +1,8 @@
 let carrito=[];
 let info = false;
 let total = 0;
-let enCarrito = document.getElementsByClassName("enCarrito");
 let verInfoText = document.getElementsByClassName("verInfoText");
-let infoButton1 = document.getElementById("infoButton-1");
-let infoButton2 = document.getElementById("infoButton-2");
-let infoButton3 = document.getElementById("infoButton-3");
-let infoButton4 = document.getElementById("infoButton-4");
+let infoButton = document.querySelectorAll(".infoButton");
 let carritoButton1 = document.getElementById("carritoButton-1");
 let carritoButton2 = document.getElementById("carritoButton-2");
 let carritoButton3 = document.getElementById("carritoButton-3");
@@ -14,39 +10,49 @@ let carritoButton4 = document.getElementById("carritoButton-4");
 let finishButton = document.getElementById("finish");
 
 const products = [
-  {keyname: 'Jordan Jumpman', price:15000, id: 1},
-  {keyname: 'Kyrie 7', price:13000, id: 2},
-  {keyname: 'Pelota Wilson', price:6000, id: 3},
-  {keyname: 'Lebron Lakers', price:11000, id: 4}
+  {keyname: 'Jordan Jumpman', price:15000, id: 0},
+  {keyname: 'Kyrie 7', price:13000, id: 1},
+  {keyname: 'Pelota Wilson', price:6000, id: 2},
+  {keyname: 'Lebron Lakers', price:11000, id: 3}
 ];
 let productsJSON = JSON.stringify(products);
 localStorage.setItem("productos", productsJSON);
 
+for (let i=0;i < infoButton.length;i++){
+  infoButton[i].addEventListener("click", moreInfoClickfunction = ()=>{
+    let productsInfo = JSON.parse(localStorage.getItem("productos"));
+    for (let j=0;j < infoButton.length;j++){
+      (infoButton[j].value == productsInfo[j].id ? e = infoButton[j].value : e="");
+    }
+    for (const product of productsInfo){
+      (product.id == e ? price = product.price : "No cotizado aun");
+    }
+    verInfoText[e].innerHTML = "caca";
+  });
+}
+
 carritoButton1.onmousedown = function(){
-  handleClick();
+  notificationClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[0].price;
 }
 carritoButton2.onmousedown = function(){
-  handleClick();
+  notificationClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[1].price; 
 }
 carritoButton3.onmousedown = function(){
-  handleClick();
+  notificationClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[2].price; 
 }
 carritoButton4.onmousedown = function(){
-  handleClick();
+  notificationClick();
   let price = JSON.parse(localStorage.getItem("productos"));
   total += price[3].price; 
 }
 
-infoButton1.onmousedown = function(){verInfoText[0].innerHTML = "Precio: $" + products[0].price}
-infoButton2.onmousedown = function(){verInfoText[1].innerHTML = "Precio: $" + products[1].price}
-infoButton3.onmousedown = function(){verInfoText[2].innerHTML = "Precio: $" + products[2].price}
-infoButton4.onmousedown = function(){verInfoText[3].innerHTML = "Precio: $" + products[3].price}
+
 
 
 let miForm = document.getElementById("formCuotas");
@@ -69,7 +75,7 @@ finishButton.onmousedown = function mostrarTotal(){
   alert(finish[0] + ", el total de su compra es: $" + total + " a pagar en " + finish[2] + " coutas")
 }
 
-function handleClick() {
+function notificationClick() {
   Toastify({
       text: "Agregado al carrito",
       duration: 1800,
@@ -85,3 +91,4 @@ function handleClick() {
       onClick: function(){} // Callback after click
   }).showToast();
 }
+
