@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../css/index.css" rel="stylesheet" type="text/css">
-	<link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <title>Threeline</title>
+    <link rel="icon" href="../images/baloncesto.png">
     <meta name = "keywords" content="basket, basquet, nba, basquetball, basketnall, Lakers, Nets">
     <meta name="description" content="Somos una empresa que se dedica a acercar al usuario la magia del basquet y de la NBA. Poder sumergirse en este hermoso deporte y conseguir la equipacion de tu equipo o jugador favorito">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--SWEETALERT2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="bodyProducts">
     <!--INSERTANDO e INICIANDO AOS-->
@@ -31,32 +34,43 @@
 		  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
 		</symbol>
 	</svg>
-  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
-    <div class="navLinks text-light">
-      <a class="navbar-link text-reset px-5 pt-2" href="../index.html">Inicio</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="products.html">Productos</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="location.html">Canchas</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="contact.html">Contacto</a>
+  <header class="p-2 bg-dark text-white">
+    <div class="headerContainer">
+      <div class="d-flex flex-wrap align-items-center justify-content-evenly">
+        <ul class="nav col-12 col-lg-auto mb-1 mb-md-0">
+          <li><a href="../index.html" class="nav-link px-lg-4"><Img src="https://icongr.am/simple/actigraph.svg?size=32&color=ffffff"></Img></a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="products.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-light bg-dark" href="products.html">Zapatillas</a></li>
+              <li><a class="dropdown-item text-light bg-dark" href="products.html">Pelotas</a></li>
+              <li><a class="dropdown-item text-light bg-dark" href="products.html">Ropa</a></li>
+              <li><hr class="dropdown-divider text-light"></li>
+              <li><a class="dropdown-item text-light bg-dark" href="products.html">Todo</a></li>
+            </ul>
+          </li>
+          <li><a href="location.html" class="nav-link px-lg-4 text-white">Canchas</a></li>
+          <li><a href="contact.html" class="nav-link px-lg-4 text-white">Contacto</a></li>
+        </ul>
+        <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+        </form>
+      </div>
     </div>
-    <div class="navSearch ms-4">
-      <form class="d-flex justify-items-end ps-3" id="search">
-          <input class="form-control" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-danger ms-2" type="submit">Buscar</button>
-      </form>
-    </div>
-  </nav>  
+  </header>
     <main class="mainProducts">
         <div class="cardsContainer">
-          <div class="row g-4">
+          <div class="row g-4 flex-wrap">
               <div class="col">
                 <div class="card">
                   <img src="../images/jordan.jpg" class="card-img-top" alt="Jordan Jumpman">
                   <div class="card-body">
                     <h5 class="card-title">Jordan Jumpman 2020</h5>
                     <p class="card-text">Jordan Jumpman 2020. Sin estrenar!</p>
-                    <button value="0" class="infoButton btn btn-outline-light" type="submit"> Ver info</button>
-                    <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-1" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
+                    <p class="verInfoText fs-4"></p>
+                    <button class="btn bt-md" type="submit"><img id="carritoButton-1" src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff" alt="Agregar producto"></button>
                   </div>
                 </div>
               </div>
@@ -66,9 +80,8 @@
                   <div class="card-body">
                     <h5 class="card-title">Kyrie 7</h5>
                     <p class="card-text">Kyrie 7 2021. Sin estrenar!</p>
-                    <button value="1" class="infoButton btn btn-outline-light" type="submit"> Ver info</button>
-                    <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-2" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
+                    <p class="verInfoText fs-4"></p>
+                    <button class="btn bt-md" type="submit"><img id="carritoButton-2" src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff" alt="Agregar producto"></button>
                   </div>
                 </div>
               </div>
@@ -78,9 +91,8 @@
                   <div class="card-body">
                     <h5 class="card-title">Pelota Wilson</h5>
                     <p class="card-text">Pelota de basquet Wilson. Oficial de partidos NBA</p>
-                    <button value="2" class="infoButton btn btn-outline-light" type="submit"> Ver info</button>
-                    <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-3" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
+                    <p class="verInfoText fs-4"></p>
+                    <button class="btn bt-md" type="submit"><img id="carritoButton-3" src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff" alt="Agregar producto"></button>
                   </div>
                 </div>
               </div>
@@ -90,28 +102,15 @@
                   <div class="card-body">
                     <h5 class="card-title">Remera Lakers Lebron James</h5>
                     <p class="card-text">Remera titular de Lebron James en los Lakers 2021.</p>
-                    <button value="3" class="infoButton btn btn-outline-light" type="submit"> Ver info</button>
-                    <p class="verInfoText fs-4 pt-2"></p>
-                    <button id="carritoButton-4" class="btn btn-outline-light" type="submit"> Agregar al Carrito</button>
+                    <p class="verInfoText fs-4"></p>
+                    <button class="btn bt-md" type="submit"><img id="carritoButton-4" src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff" alt="Agregar producto"></button>
                   </div>
                 </div>
               </div>
             </div>
         </div>
-        <div class="formDiv">
-          <form class="container-xl" id="formCuotas"> 
-              <h3>Formulario de pago</h3>
-              <label for="exampleInputName" class="form-label text-light">Nombre</label>
-              <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-              <label for="exampleInputSurname" class="form-label text-light">Apellido</label>
-              <input type="text" class="form-control" id="exampleInputurname">
-              <label for="exampleInputPassword1" class="form-label text-light">Cantidad de Coutas (1-12)</label>
-              <input type="number" max="12" min="1" class="form-control" id="exampleInputPassword1">
-              <input type="submit" value="Enviar" class="btn btn-outline-light">
-          </form>
-        </div>  
         <div class="finishButton">
-          <button id="finish" class="btn btn-danger fs-5 type="submit">Finalizar compra</button>
+          <button id="finish" class="btn" type=submit">Finalizar compra</button>
         </div>
     </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 bg-dark bg-opacity-100">

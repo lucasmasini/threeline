@@ -4,17 +4,17 @@ body {
   margin: 0px;
   background-image: linear-gradient(to left, #363535, #353232, #333030, #322d2d, #302b2b); }
 
-nav {
+header {
   border-bottom: 2px solid #550108; }
-  nav a {
+  header .nav a {
     text-decoration: none;
-    transition: all .4s; }
-  nav #search {
-    width: 300px; }
+    transition: all .5s; }
+  header .nav a:active {
+    transform: translateY(3px);
+    transition: .1s; }
 
-.navbar a:hover {
-  font-size: 1.06em;
-  text-decoration: underline; }
+.headerContainer a:hover {
+  font-size: 1.07em; }
 
 footer {
   border-top: 2px solid #550108; }
@@ -38,19 +38,21 @@ footer {
     color: #d8f097;
     font-size: 60px; }
   .principalIndex .principalIndexArrow {
-    width: 160px;
-    height: 140px;
+    display: flex;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    margin-left: 43%;
+    margin-left: 45%;
     align-self: end;
+    margin-bottom: 20px;
     color: #d8f097;
     font-size: 60px; }
     .principalIndex .principalIndexArrow img {
       width: 100%;
       height: 100%;
-      transition: .7s; }
-    .principalIndex .principalIndexArrow img:hover {
-      transform: translate(0px, -13.5px); }
+      transform: rotate(90deg); }
+    .principalIndex .principalIndexArrow img:active {
+      transform: rotate(90deg) translateY(4px); }
 
 .indexCards {
   display: flex;
@@ -84,8 +86,10 @@ footer {
   .card-body-index .carouselButton {
     width: 200px; }
     .card-body-index .carouselButton button {
-      width: 100%;
-      height: 40%; }
+      transition: .2s; }
+    .card-body-index .carouselButton button:active {
+      box-shadow: 0 3px #1d1d1d;
+      transform: translateY(4px); }
 
 .proximamente {
   width: 100%;
@@ -101,18 +105,6 @@ footer {
 .mainIndex {
   overflow-x: hidden; }
 
-#formCuotas {
-  margin: 2em;
-  padding: 1em;
-  background-color: #440000; }
-  #formCuotas .btn {
-    width: 27%; }
-  #formCuotas input {
-    margin-bottom: .8em; }
-  #formCuotas h3 {
-    color: white;
-    text-align: center; }
-
 .bodyProducts {
   margin: 0px;
   background-image: url("../images/card4.jpg");
@@ -122,16 +114,48 @@ footer {
   background-attachment: fixed; }
 
 .cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
   margin: 2em;
   padding: 1em; }
   .cardsContainer .card {
+    min-width: 213px;
+    min-height: 413px;
+    max-width: 293px;
+    max-height: 493px;
     height: 100%;
     background-color: #440000;
     color: antiquewhite;
-    border-radius: 11px; }
+    border-radius: 11px;
+    border: 1.5px solid #630008;
+    box-shadow: 2px 3px 3px 2px #1d1d1d; }
     .cardsContainer .card img {
       border-top-left-radius: 11px;
       border-top-right-radius: 11px; }
+    .cardsContainer .card .card-body {
+      height: 200px;
+      padding: 12px 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: flex-end; }
+      .cardsContainer .card .card-body h5 {
+        width: 100%; }
+      .cardsContainer .card .card-body .card-text {
+        width: 100%;
+        height: 70px;
+        overflow-y: auto;
+        margin-bottom: 10px; }
+      .cardsContainer .card .card-body .verInfoText {
+        margin-bottom: 0px;
+        padding-top: 0px;
+        align-self: center; }
+      .cardsContainer .card .card-body button {
+        margin-left: auto;
+        transition: .2s; }
+      .cardsContainer .card .card-body button:active {
+        box-shadow: 0 3px #1d1d1d;
+        transform: translateY(3.5px); }
 
 .formDiv {
   display: flex;
@@ -144,5 +168,18 @@ footer {
   display: flex;
   justify-content: center; }
   .finishButton #finish {
-    width: 230px;
-    height: 130px; }
+    font-size: 18px;
+    width: 160px;
+    height: 80px;
+    background-color: #550108;
+    color: antiquewhite;
+    border: 1.5px solid #630008;
+    transition: all .4s; }
+  .finishButton #finish:hover {
+    background-color: #83000b;
+    box-shadow: 1px 1px 1px 1px #1d1d1d; }
+  .finishButton #finish:active {
+    background-color: #83000b;
+    box-shadow: 0 5px #1d1d1d;
+    transform: translateY(4px);
+    transition: .1s; }

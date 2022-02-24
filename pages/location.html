@@ -32,19 +32,32 @@
 		</symbol>
 	</svg>
   <nav class="navbar navbar-dark border-bottom bg-dark d-flex justify-content-center">
-    <div class="navLinks text-light">
-      <a class="navbar-link text-reset px-5 pt-2" href="../index.html">Inicio</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="products.html">Productos</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="location.html">Canchas</a>
-      <a class="navbar-link text-reset px-5 pt-2" href="contact.html">Contacto</a>
-    </div>
-    <div class="navSearch ms-4">
-      <form class="d-flex justify-items-end ps-3" id="search">
-          <input class="form-control" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
-      </form>
-    </div>
-  </nav>  
+    <header class="p-2 bg-dark text-white">
+      <div class="headerContainer">
+        <div class="d-flex flex-wrap align-items-center justify-content-evenly">
+          <ul class="nav col-12 col-lg-auto mb-2 mb-md-0">
+            <li><a href="../index.html" class="nav-link px-lg-4"><Img src="https://icongr.am/simple/actigraph.svg?size=32&color=ffffff"></Img></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="products.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-light bg-dark" href="products.html">Zapatillas</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="products.html">Pelotas</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="products.html">Ropa</a></li>
+                <li><hr class="dropdown-divider text-light"></li>
+                <li><a class="dropdown-item text-light bg-dark" href="products.html">Todo</a></li>
+              </ul>
+            </li>
+            <li><a href="location.html" class="nav-link px-lg-4 text-white">Canchas</a></li>
+            <li><a href="contact.html" class="nav-link px-lg-4 text-white">Contacto</a></li>
+          </ul>
+          <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </header> 
     <main>
         <div class="proximamente">
             <h1>PROXIMAMENTE</h1>

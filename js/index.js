@@ -1,8 +1,7 @@
 let carrito=[];
 let info = false;
 let total = 0;
-let verInfoText = document.getElementsByClassName("verInfoText");
-let infoButton = document.querySelectorAll(".infoButton");
+let verInfoText = document.querySelectorAll(".verInfoText");
 let carritoButton1 = document.getElementById("carritoButton-1");
 let carritoButton2 = document.getElementById("carritoButton-2");
 let carritoButton3 = document.getElementById("carritoButton-3");
@@ -18,17 +17,8 @@ const products = [
 let productsJSON = JSON.stringify(products);
 localStorage.setItem("productos", productsJSON);
 
-for (let i=0;i < infoButton.length;i++){
-  infoButton[i].addEventListener("click", moreInfoClickfunction = ()=>{
-    let productsInfo = JSON.parse(localStorage.getItem("productos"));
-    for (let j=0;j < infoButton.length;j++){
-      (infoButton[j].value == productsInfo[j].id ? e = infoButton[j].value : e="");
-    }
-    for (const product of productsInfo){
-      (product.id == e ? price = product.price : "No cotizado aun");
-    }
-    verInfoText[e].innerHTML = "caca";
-  });
+for (let i=0;i < verInfoText.length;i++){
+  verInfoText[i].innerHTML = "$ " + products[i].price;
 }
 
 carritoButton1.onmousedown = function(){
@@ -52,27 +42,16 @@ carritoButton4.onmousedown = function(){
   total += price[3].price; 
 }
 
-
-
-
-let miForm = document.getElementById("formCuotas");
-miForm.addEventListener("submit", validarFormulario);
-
-function validarFormulario(e) {
-    localStorage.removeItem("dataForm");
-    e.preventDefault();
-    let form = e.target;
-    let data = [form.children[2].value,form.children[4].value,form.children[6].value]
-    let dataJSON = JSON.stringify(data);
-    localStorage.setItem("dataForm", dataJSON);
-};
-
-
 finishButton.onmousedown = function mostrarTotal(){
   let totalJSON = JSON.stringify(total);
   localStorage.setItem("totalprice", totalJSON);
   let finish = JSON.parse(localStorage.getItem("dataForm"));
-  alert(finish[0] + ", el total de su compra es: $" + total + " a pagar en " + finish[2] + " coutas")
+  Swal.fire({
+    icon: 'success',
+    title: 'Compra Finalizada',
+    text: "El total de su compra es: $" + total,
+    confirmButtonText: '<a href="https://www.mercadopago.com.ar/home" target="_blank" style="text-decoration: none; color: white">Ir a pagar</a>'
+  });
 }
 
 function notificationClick() {
@@ -82,13 +61,13 @@ function notificationClick() {
       destination: "https://github.com/apvarun/toastify-js",
       newWindow: true,
       close: false,
-      gravity: "top", // `top` or `bottom`
-      position: "left", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "top", 
+      position: "left", 
+      stopOnFocus: true,
       style: {
       background: "linear-gradient(to right, #c50101, #a40009, #83000b, #630008, #440000)",
       },
-      onClick: function(){} // Callback after click
+      onClick: function(){}
   }).showToast();
 }
 
