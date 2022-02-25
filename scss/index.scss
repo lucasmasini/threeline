@@ -2,7 +2,11 @@ body {
     height: 90vh;
     width: 100%;
     margin: 0px;
-    background-image: linear-gradient(to left, #363535, #353232, #333030, #322d2d, #302b2b);
+    background-image: url("../images/fondoIndexCards.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
 }
 header {
     border-bottom: 2px solid #550108;

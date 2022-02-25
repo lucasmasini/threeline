@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	  <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <title>Threeline</title>
+    <link rel="icon" href="../images/baloncesto.png">
     <meta name = "keywords" content="basket, basquet, nba, basquetball, basketnall, Lakers, Nets">
     <meta name="description" content="Somos una empresa que se dedica a acercar al usuario la magia del basquet y de la NBA. Poder sumergirse en este hermoso deporte y conseguir la equipacion de tu equipo o jugador favorito">
 </head>
@@ -53,7 +54,7 @@
             <li><a href="pages/contact.html" class="nav-link px-lg-4 text-white">Contacto</a></li>
           </ul>
           <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+            <input type="search" class="form-control form-control-dark searchInput" placeholder="Buscar..." aria-label="Search">
           </form>
         </div>
       </div>
@@ -72,82 +73,83 @@
           </a>
         </div>
       </div>
-      <div class="indexCards mb-3 mt-3 gap-5" id="cards">
-        <!--CARD 1--> 
-        <div class="cardBox row g-0 ">
-          <div class="carouselImg col-md-6">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/images/lakers.jpg" class="d-block w-100" alt="Remera Lakers">
+        <div class="indexCards mb-3 mt-3 gap-5" id="cards">
+          <!--CARD 1--> 
+          <div class="cardBox row g-0 ">
+            <div class="carouselImg col-md-6">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/lakers.jpg" class="d-block w-100" alt="Remera Lakers">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/kyriejpg.jpg" class="d-block w-100" alt="Zapatillas Kyrie">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/jordan.jpg" class="d-block w-100" alt="Zapatillas Jordan">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="/images/kyriejpg.jpg" class="d-block w-100" alt="Zapatillas Kyrie">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/jordan.jpg" class="d-block w-100" alt="Zapatillas Jordan">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-danger " aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card-body-index">
-              <h3 class="card-title mt-4 h3 text-center">Productos</h3>
-              <p class="card-text fs-5 text-center">Aqui vas a encontrar las mejores zapatillas, remeras y equipacion de tus equipos favoritos de la NBA</p>
-              <div class="carouselButton">
-                <div class="d-grid col-12">
-                  <a class="mx-auto" href="pages/products.html">
-                    <button class="btn btn-outline-light btn-lg">Ver mas info</button>
-                  </a>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-danger " aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-        <!--CARD 2-->
-        <div class="cardBox row g-0">
-          <div class="col-md-6">
-            <div class="card-body-index">
-              <h3 class="card-title mt-4 h3 text-center">Canchas</h3>
-              <p class="card-text fs-5 text-center">Encontra y reserva las mejores canchas de basquet situadas por toda Argentina</p>
-              <div class="carouselButton">
-                <div class="d-grid col-12">
-                  <a class="mx-auto" href="pages/location.html">
-                    <button class="btn btn-outline-light btn-lg">Ver mas info</button>
-                  </a>
+            <div class="col-md-6">
+              <div class="card-body-index">
+                <h3 class="card-title mt-4 h3 text-center">Productos</h3>
+                <p class="card-text fs-5 text-center">Aqui vas a encontrar las mejores zapatillas, remeras y equipacion de tus equipos favoritos de la NBA</p>
+                <div class="carouselButton">
+                  <div class="d-grid col-12">
+                    <a class="mx-auto" href="pages/products.html">
+                      <button class="btn btn-outline-light btn-lg">Ver mas info</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carouselImg col-md-6">
-            <div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/images/cancha1.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/cancha2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/cancha3.jpg" class="d-block w-100" alt="...">
+          <!--CARD 2-->
+          <div class="cardBox row g-0">
+            <div class="col-md-6">
+              <div class="card-body-index">
+                <h3 class="card-title mt-4 h3 text-center">Canchas</h3>
+                <p class="card-text fs-5 text-center">Encontra y reserva las mejores canchas de basquet situadas por toda Argentina</p>
+                <div class="carouselButton">
+                  <div class="d-grid col-12">
+                    <a class="mx-auto" href="pages/location.html">
+                      <button class="btn btn-outline-light btn-lg">Ver mas info</button>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="carouselImg col-md-6">
+              <div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/cancha1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/cancha2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/cancha3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
