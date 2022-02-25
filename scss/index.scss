@@ -2,18 +2,18 @@ body {
     height: 90vh;
     width: 100%;
     margin: 0px;
-    background-image: linear-gradient(to left, #363535, #353232, #333030, #322d2d, #302b2b);;
+    background-image: linear-gradient(to left, #363535, #353232, #333030, #322d2d, #302b2b);
 }
 header {
     border-bottom: 2px solid #550108;
     .nav {
-        a{
+        a {
             text-decoration: none;
-            transition: all .5s;
+            transition: all 0.5s;
         }
-        a:active{
+        a:active {
             transform: translateY(3px);
-            transition: .1s;
+            transition: 0.1s;
         }
     }
 }
@@ -22,10 +22,11 @@ header {
 }
 footer {
     border-top: 2px solid #550108;
+    margin-top: 40px;
 }
 
 // INDEX
-.principalIndex{
+.principalIndex {
     position: relative;
     display: flex;
     width: 100%;
@@ -34,19 +35,19 @@ footer {
         position: relative;
         width: 100%;
         height: 100%;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
-    }    
-    .principalIndexText-1{
+    }
+    .principalIndexText-1 {
         position: absolute;
         justify-self: center;
         align-self: center;
         color: rgb(216, 240, 151);
         font-size: 60px;
     }
-    .principalIndexArrow{
+    .principalIndexArrow {
         display: flex;
         width: 100px;
         height: 100px;
@@ -56,7 +57,7 @@ footer {
         margin-bottom: 20px;
         color: rgb(216, 240, 151);
         font-size: 60px;
-        img{
+        img {
             width: 100%;
             height: 100%;
             transform: rotate(90deg);
@@ -65,35 +66,34 @@ footer {
             transform: rotate(90deg) translateY(4px);
         }
     }
-
 }
 
-.indexCards{
+.indexCards {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.cardBox{
+.cardBox {
     width: 1100px;
     margin: 8px 0px;
     border-radius: 7px;
     border: 0.8px solid #83000b;
     box-shadow: 2px 3px 3px 2px #2c0000;
-    background-image: linear-gradient(to right, #c50101, #a40009, #83000b, #630008, #440000);;
+    background-image: linear-gradient(to right, #c50101, #a40009, #83000b, #630008, #440000);
     color: antiquewhite;
 }
-.carousel-item{
+.carousel-item {
     height: 400px;
     width: 100%;
     img {
-        padding: .7em;
+        padding: 0.7em;
         height: 97%;
-        width: 60%; 
+        width: 60%;
         border-radius: 5%;
+    }
 }
-}
-.card-body-index{
+.card-body-index {
     display: flex;
     height: 100%;
     flex-wrap: wrap;
@@ -101,7 +101,7 @@ footer {
     .carouselButton {
         width: 200px;
         button {
-            transition: .2s;
+            transition: 0.2s;
         }
         button:active {
             box-shadow: 0 3px #1d1d1d;
@@ -117,7 +117,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-        h1 {
+    h1 {
         font-size: 5em;
         color: rgb(124, 109, 10);
     }
@@ -132,12 +132,12 @@ footer {
 .bodyProducts {
     margin: 0px;
     background-image: url("../images/card4.jpg");
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: cover;
-	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.cardsContainer{
+.cardsContainer {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
@@ -145,7 +145,7 @@ footer {
     .card {
         min-width: 213px;
         min-height: 413px;
-        max-width: 293px;  //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
+        max-width: 293px; //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
         max-height: 493px; //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
         height: 100%;
         background-color: #440000;
@@ -155,9 +155,9 @@ footer {
         box-shadow: 2px 3px 3px 2px #1d1d1d;
         img {
             border-top-left-radius: 11px;
-            border-top-right-radius: 11px;  
+            border-top-right-radius: 11px;
         }
-        .card-body{
+        .card-body {
             height: 200px;
             padding: 12px 14px;
             display: flex;
@@ -173,14 +173,14 @@ footer {
                 overflow-y: auto;
                 margin-bottom: 10px;
             }
-            .verInfoText{
+            .verInfoText {
                 margin-bottom: 0px;
                 padding-top: 0px;
                 align-self: center;
             }
             button {
                 margin-left: auto;
-                transition: .2s;
+                transition: 0.2s;
             }
             button:active {
                 box-shadow: 0 3px #1d1d1d;
@@ -192,31 +192,75 @@ footer {
 .formDiv {
     display: flex;
     justify-content: center;
-
 }
 .finishButton {
     width: 100%;
-    height: 180px;
-    padding: 25px;
+    height: 140px;
+    padding: 25px 25px 0px 25px;
     display: flex;
     justify-content: center;
     #finish {
+        margin-top: 5px;
         font-size: 18px;
-        width: 160px;
+        width: 165px;
         height: 80px;
-        background-color:#550108;
-        color: antiquewhite;
-        border: 1.5px solid #630008;
-        transition: all .4s;
+        font-weight: 600;
+        background-color: rgba(250, 235, 215, 0.884);
+        color: #550108;
+        border: 1.5px solid #a40009;
+        box-shadow: 1px 1px 1px 1px #1d1d1d;
+        transition: all 0.4s;
     }
     #finish:hover {
-        background-color:#83000b;
-        box-shadow: 1px 1px 1px 1px #1d1d1d;
+        background-color: #83000b;
+        box-shadow: 1px 2.5px 2.5px 1px #1d1d1d;
+        color: antiquewhite;
     }
     #finish:active {
         background-color: #83000b;
         box-shadow: 0 5px #1d1d1d;
         transform: translateY(4px);
-        transition: .1s;
+        transition: 0.2s;
     }
+}
+.shoppingCartBackground {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+    padding-bottom: -30px;
+    .shopping-cart{
+        background-color:#630008;
+        color: antiquewhite;
+        border-radius: 11px;
+        border: 1.5px solid #a40009;
+        box-shadow: 1px 2px 2px 1px #1d1d1d;
+    }
+}
+
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+    border-bottom: 1px solid #ccc;
 }

@@ -8,16 +8,17 @@ header {
   border-bottom: 2px solid #550108; }
   header .nav a {
     text-decoration: none;
-    transition: all .5s; }
+    transition: all 0.5s; }
   header .nav a:active {
     transform: translateY(3px);
-    transition: .1s; }
+    transition: 0.1s; }
 
 .headerContainer a:hover {
   font-size: 1.07em; }
 
 footer {
-  border-top: 2px solid #550108; }
+  border-top: 2px solid #550108;
+  margin-top: 40px; }
 
 .principalIndex {
   position: relative;
@@ -73,7 +74,7 @@ footer {
   height: 400px;
   width: 100%; }
   .carousel-item img {
-    padding: .7em;
+    padding: 0.7em;
     height: 97%;
     width: 60%;
     border-radius: 5%; }
@@ -86,7 +87,7 @@ footer {
   .card-body-index .carouselButton {
     width: 200px; }
     .card-body-index .carouselButton button {
-      transition: .2s; }
+      transition: 0.2s; }
     .card-body-index .carouselButton button:active {
       box-shadow: 0 3px #1d1d1d;
       transform: translateY(4px); }
@@ -152,7 +153,7 @@ footer {
         align-self: center; }
       .cardsContainer .card .card-body button {
         margin-left: auto;
-        transition: .2s; }
+        transition: 0.2s; }
       .cardsContainer .card .card-body button:active {
         box-shadow: 0 3px #1d1d1d;
         transform: translateY(3.5px); }
@@ -163,23 +164,62 @@ footer {
 
 .finishButton {
   width: 100%;
-  height: 180px;
-  padding: 25px;
+  height: 140px;
+  padding: 25px 25px 0px 25px;
   display: flex;
   justify-content: center; }
   .finishButton #finish {
+    margin-top: 5px;
     font-size: 18px;
-    width: 160px;
+    width: 165px;
     height: 80px;
-    background-color: #550108;
-    color: antiquewhite;
-    border: 1.5px solid #630008;
-    transition: all .4s; }
+    font-weight: 600;
+    background-color: rgba(250, 235, 215, 0.884);
+    color: #550108;
+    border: 1.5px solid #a40009;
+    box-shadow: 1px 1px 1px 1px #1d1d1d;
+    transition: all 0.4s; }
   .finishButton #finish:hover {
     background-color: #83000b;
-    box-shadow: 1px 1px 1px 1px #1d1d1d; }
+    box-shadow: 1px 2.5px 2.5px 1px #1d1d1d;
+    color: antiquewhite; }
   .finishButton #finish:active {
     background-color: #83000b;
     box-shadow: 0 5px #1d1d1d;
     transform: translateY(4px);
-    transition: .1s; }
+    transition: 0.2s; }
+
+.shoppingCartBackground {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+  padding-bottom: -30px; }
+  .shoppingCartBackground .shopping-cart {
+    background-color: #630008;
+    color: antiquewhite;
+    border-radius: 11px;
+    border: 1.5px solid #a40009;
+    box-shadow: 1px 2px 2px 1px #1d1d1d; }
+
+.shopping-cart-items {
+  padding: 20px 0px; }
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc; }
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px; }
+
+.shopping-cart-quantity-input {
+  max-width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px; }
+
+.shopping-cart-total {
+  min-height: 96px;
+  border-bottom: 1px solid #ccc; }
