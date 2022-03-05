@@ -142,11 +142,18 @@ footer {
     background-attachment: fixed;
 }
 .cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     margin: 2em;
     padding: 1em;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 296px);
+        grid-row: auto;
+        gap: 1em;
+        padding-left: 1em;
+    }
     .card {
+        order: 1;
         min-width: 213px;
         min-height: 413px;
         max-width: 293px; //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
@@ -157,11 +164,13 @@ footer {
         border-radius: 11px;
         border: 1.5px solid #630008;
         box-shadow: 2px 3px 3px 2px #1d1d1d;
+        transition: all 0.4s ease-in-out;
         img {
             border-top-left-radius: 11px;
             border-top-right-radius: 11px;
         }
         .card-body {
+            display: grid;
             height: 200px;
             padding: 12px 14px;
             display: flex;
@@ -272,4 +281,12 @@ footer {
 .shopping-cart-total {
     min-height: 96px;
     border-bottom: 1px solid #ccc;
+}
+
+.searchFilter {
+    visibility: hidden;
+    opacity: 0;
+}
+.orderFirst {
+    order: 0;
 }

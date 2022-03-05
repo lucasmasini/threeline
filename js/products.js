@@ -84,7 +84,6 @@ const shoppingCartTotal = () => {
     cartItems.forEach((cartItem) => {
         let cartItemPriceElement = cartItem.querySelector(".shoppingCartItemPrice").textContent.replace("$", "");
         let cartItemPrice = Number(cartItemPriceElement);
-        console.log(cartItemPrice);
         let cartItemQuantityElement = cartItem.querySelector(".shoppingCartItemQuantity").value;
         let cartItemQuantity = Number(cartItemQuantityElement);
 
