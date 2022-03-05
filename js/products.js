@@ -108,9 +108,6 @@ const quantityItemChanged = (e) => {
 //BUTTONS WITH LIBRARIES
 
 finishButton.onmousedown = function mostrarTotal(){
-let totalJSON = JSON.stringify(total);
-localStorage.setItem("totalprice", totalJSON);
-let finish = JSON.parse(localStorage.getItem("dataForm"));
 Swal.fire({
     icon: 'success',
     title: 'Compra Finalizada',
