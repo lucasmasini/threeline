@@ -1,0 +1,18 @@
+[
+{keyname: 'Jordan Jumpman', price: 15000,description:'Jordan Jumpman 2020. Sin estrenar!' , url:"../images/products/jordan.jpg" , id: Z1},
+{keyname: 'Kyrie 7', price: 13000,description:'Kyrie 7 2021. Sin estrenar!' ,url:"../images/products/kyrie.jpg"  ,id: Z2},
+{keyname: 'Cross Em', price: 11000 ,description: 'Cross Em 2021. Sin estrenar!',url:"../images/products/cross.jpg"  ,id: Z3}
+{keyname: 'Topper Candun', price: 12000 ,description: 'Topper Candun 2022. Sin estrenar!',url: "../images/products/topper.jpg" ,id: Z4}
+{keyname: 'Kt4 Anta Blanca', price: 14000,description: 'Klay Thompson 4. Sin estrenar!',url: "../images/products/Klay K4.jpg" ,id: Z5}
+{keyname: 'G4 Heart of city', price: 13500,description: 'G4 2022. Sin estrenar!',url: "../images/products/G4.jpg" ,id: Z6}
+{keyname: 'Ownthegame', price: 16000,description: 'Adidas 2021. Sin estrenar!',url:"../images/products/ownthegame.jpg"  ,id: Z7}
+{keyname: 'Curry 8', price: 16500,description: 'Under Armor Curry 2021. Sin estrenar!',url: "../images/products/Curry 8.jpg" ,id: Z8}
+{keyname: 'Pelota Wilson', price: 6000,description:'Pelota de basquet Wilson. Oficial de partidos NBA' ,url:"../images/products/wilson.jpg" , id: P1},
+{keyname: 'Pelota Spalding gold', price: 8500,description:'Pelota de basquet Wilson. Oficial de Playoffs en la NBA' ,url:"../images/products/spalding gold.jpg" , id: P2}
+{keyname: 'Lebron Lakers', price: 13000,description: 'Remera titular de Lebron James en los Lakers 2021.', url: "../images/products/lakers.jpg",id: R1}
+{keyname: 'Durant Nets', price: 13000,description: 'Remera titular de Kevin Durant en los Nets 2021.', url: "../images/products/durant.jpg",id: R2}
+{keyname: 'Curry Warriors', price: 11500,description: 'Remera titular de Stephen Curry en los Warrios 2021.', url:"../images/products/curry.jpg" ,id: R3}
+{keyname: 'Giannis Bucks', price: 12500,description: 'Remera titular de Giannis en los Bucks 2021.', url: "../images/products/giannis.jpg",id: R4}
+{keyname: 'Booker Suns', price: 11000,description:'Remera titular de Devin Booker en los Suns 2021.' , url:"../images/products/booker.jpg" ,id: R5}
+{keyname: 'LaVine Bulls', price: 11500,description: 'Remera titular de Zach LaVine en los Bulls 2021.', url: "../images/products/lavine.jpg",id: R6}
+];

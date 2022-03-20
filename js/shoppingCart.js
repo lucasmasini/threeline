@@ -78,13 +78,6 @@ const shoppingCartTotal = () => {
 const removeItemFromCart = (e) => {
     let button = e.target;
     button.closest(".shoppingCartItem").remove();
-
-    // Intento de eliminar un producto a la vez, sin tener que comprar
-    // let cartTitle = document.querySelector('.shoppingCartItemTitle').textContent;
-    // let productRemove = productsSelected.filter(product=> product.keyname !== cartTitle);
-    // productRemove = JSON.stringify(productRemove);
-    // localStorage.setItem('shoppingCartObject', productRemove);
-    
     shoppingCartTotal();
 }
 

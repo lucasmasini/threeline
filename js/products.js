@@ -3,6 +3,7 @@ setTimeout(()=>{addToShoppingCartButton = document.querySelectorAll(".addToCart"
 let newCardItem = document.querySelector(".cardsContainer")
 
 // Productos almacenados en localStorage
+
 // let productsJSON = JSON.stringify(products);
 // localStorage.setItem("productos", productsJSON);
 
@@ -13,16 +14,16 @@ const addNewItem = () => {
         let newCard = document.createElement("div");
         let newCardContent = `        
         <div class="col col-auto mt-5 mx-0">
-            <div class="card cardProduct">
-            <img src=${product.url} class="card-img-top" alt=${product.keyname}>
-                <div class="card-body">
-                <h5 class="card-title">${product.keyname}</h5>
-                <p class="card-text">${product.description}</p>
-                <p class="verInfoText fs-4">$${product.price}</p>
-                <button class="btn bt-md" type="submit"><img class="addToCart" id="3"
-                src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
-                alt="Agregar producto"></button>
-            </div>
+                <div class="card cardProduct">
+                    <img src=${product.url} class="card-img-top" alt=${product.keyname}>
+                    <div class="card-body">
+                        <h5 class="card-title">${product.keyname}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <p class="verInfoText fs-4">$${product.price}</p>
+                        <button class="btn bt-md" type="submit"><img class="addToCart" id="3"
+                        src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
+                        alt="Agregar producto"></button>
+                </div>
         </div>`
         newCard.innerHTML = newCardContent;
         newCardItem.appendChild(newCard);
@@ -48,12 +49,6 @@ const AddCartStorage = (object)=>{
         selectProducts.push(object);
         selectProducts = JSON.stringify(selectProducts);
         localStorage.setItem('shoppingCartObject', selectProducts);
-
-        // selectProducts = JSON.parse(selectProducts);
-        // selectProducts.push(object);
-        // console.log(selectProducts);
-        // selectProducts = JSON.stringify(selectProducts);
-        // localStorage.setItem("shoppingCartObject", selectProducts);
     }
 }
 
