@@ -64,7 +64,7 @@
             </ul>
           </li>
           <li><a href="location.html" class="nav-link px-lg-4 text-white">Canchas</a></li>
-          <li><a href="contact.html" class="nav-link px-lg-4 text-white">Contacto</a></li>
+          <li><a href="shoppingCart.html" class="nav-link px-lg-4 text-white">Carrito</a></li>
         </ul>
         <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="searchInput form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
@@ -73,103 +73,11 @@
     </div>
   </header>
   <main class="mainProducts">
+
+    <!--Aca se generan los productos -->
     <div class="cardsContainer">
-      <div class="row g-4">
-        <div class="col col-auto">
-          <div class="card cardProduct">
-            <img src="../images/jordan.jpg" class="card-img-top" alt="Jordan Jumpman">
-            <div class="card-body">
-              <h5 class="card-title">Jordan Jumpman 2020</h5>
-              <p class="card-text">Jordan Jumpman 2020. Sin estrenar!</p>
-              <p class="verInfoText fs-4"></p>
-              <button class="btn bt-md" type="submit"><img class="addToCart" id="1"
-                  src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
-                  alt="Agregar producto"></button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-auto">
-          <div class="card cardProduct" id="12">
-            <img src="../images/kyriejpg.jpg" class="card-img-top" alt="Kyrie 7">
-            <div class="card-body">
-              <h5 class="card-title">Kyrie 7</h5>
-              <p class="card-text">Kyrie 7 2021. Sin estrenar!</p>
-              <p class="verInfoText fs-4"></p>
-              <button class="btn bt-md" type="submit"><img class="addToCart" id="2"
-                  src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
-                  alt="Agregar producto"></button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-auto">
-          <div class="card cardProduct">
-            <img src="../images/wilson.jpg" class="card-img-top" alt="Pelota wilson">
-            <div class="card-body">
-              <h5 class="card-title">Pelota Wilson</h5>
-              <p class="card-text">Pelota de basquet Wilson. Oficial de partidos NBA</p>
-              <p class="verInfoText fs-4"></p>
-              <button class="btn bt-md" type="submit"><img class="addToCart" id="3"
-                  src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
-                  alt="Agregar producto"></button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-auto">
-          <div class="card cardProduct">
-            <img src="../images/lakers.jpg" class="card-img-top" alt="Remera Lebron Lakers">
-            <div class="card-body">
-              <h5 class="card-title">Remera Lakers Lebron James</h5>
-              <p class="card-text">Remera titular de Lebron James en los Lakers 2021.</p>
-              <p class="verInfoText fs-4"></p>
-              <button class="btn bt-md" type="submit"><img class="addToCart" id="4"
-                  src="https://icongr.am/fontawesome/cart-plus.svg?size=38&color=ffffff"
-                  alt="Agregar producto"></button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="shoppingCartBackground">
-      <section class="shopping-cart">
-        <div class="container">
-          <h1 class="text-center">CARRITO</h1>
-          <hr>
-          <div class="row">
-            <div class="col-6">
-              <div class="shopping-cart-header">
-                <h6>Producto</h6>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="shopping-cart-header">
-                <h6 class="text-truncate">Precio</h6>  <!---EN MOBILE ELIMINAR ESTA COLUMNA -->
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="shopping-cart-header">
-                <h6>Cantidad</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- ? START SHOPPING CART ITEMS -->
-          <div class="shopping-cart-items shoppingCartItemsContainer">
-          </div>
-
-          <!-- START TOTAL -->
-          <div class="row">
-            <div class="col-12">
-              <div class="shopping-cart-total d-flex align-items-center">
-                <p class="mb-0 px-5 fs-4">Total</p>
-                <p class="ml-4 mb-0 px-1 shoppingCartTotal fs-4"></p>
-            </div>
-          </div>
-          <div class="finishButton">
-            <button id="finish" class="btn mb-0" type=submit">Finalizar compra</button>
-          </div>
-        </div>
-      </section>
-    </div>
+    
   </main>
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 bg-dark bg-opacity-100">
     <div class="col-md-4 d-flex align-items-center ps-4">
@@ -190,7 +98,7 @@
           </svg></a></li>
     </ul>
   </footer>
-  <script src="../js/index.js" type="text/javascript"></script>
+  <script src="../js/productsSearch.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="../js/products.js" type="text/javascript"></script>
 </body>

@@ -7,7 +7,6 @@ const searchItemLive = (e) => {
         if (itemTitle.textContent.toLowerCase().includes(input.value)){
             let itemCard = itemTitle.closest(".cardProduct");
             itemCard.classList.remove("searchFilter");
-            itemCard.classList.add("orderFirst");
         }else {
             let itemCard = itemTitle.closest(".cardProduct");
             itemCard.classList.add("searchFilter");

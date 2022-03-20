@@ -1,3 +1,15 @@
+$TextColor: antiquewhite;
+$PageColor-1: #440000;
+$PageColor-2: #630008;
+$PageColor-3: #83000b;
+$PageColor-4: #a40009;
+$PageColor-5: #c50101;
+$ShadowCardColor: #1d1d1d;
+
+@import "products.scss";
+@import "shoppingCart.scss";
+
+
 body {
     height: 90vh;
     width: 100%;
@@ -44,13 +56,6 @@ footer {
             height: 100%;
         }
     }
-    .principalIndexText-1 {
-        position: absolute;
-        justify-self: center;
-        align-self: center;
-        color: rgb(216, 240, 151);
-        font-size: 60px;
-    }
     .principalIndexArrow {
         display: flex;
         width: 100px;
@@ -59,7 +64,6 @@ footer {
         margin-left: 45%;
         align-self: end;
         margin-bottom: 20px;
-        color: rgb(216, 240, 151);
         font-size: 60px;
         img {
             width: 100%;
@@ -82,10 +86,10 @@ footer {
     width: 1100px;
     margin: 8px 0px;
     border-radius: 7px;
-    border: 0.8px solid #83000b;
-    box-shadow: 2px 3px 3px 2px #2c0000;
-    background-image: linear-gradient(to right, #c50101, #a40009, #83000b, #630008, #440000);
-    color: antiquewhite;
+    border: 0.8px solid $PageColor-3;
+    box-shadow: 2px 3px 3px 2px $ShadowCardColor;
+    background-image: linear-gradient(to right, $PageColor-5, $PageColor-4, $PageColor-3, $PageColor-2, $PageColor-1);
+    color: $TextColor;
 }
 .carousel-item {
     height: 400px;
@@ -108,7 +112,7 @@ footer {
             transition: 0.2s;
         }
         button:active {
-            box-shadow: 0 3px #1d1d1d;
+            box-shadow: 0 3px $ShadowCardColor;
             transform: translateY(4px);
         }
     }
@@ -129,164 +133,4 @@ footer {
 
 .mainIndex {
     overflow-x: hidden;
-}
-
-// PRODCUTS
-
-.bodyProducts {
-    margin: 0px;
-    background-image: url("../images/card4.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.cardsContainer {
-    display: grid;
-    margin: 2em;
-    padding: 1em;
-    .row {
-        display: grid;
-        grid-template-columns: repeat(4, 296px);
-        grid-row: auto;
-        gap: 1em;
-        padding-left: 1em;
-    }
-    .card {
-        order: 1;
-        min-width: 213px;
-        min-height: 413px;
-        max-width: 293px; //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
-        max-height: 493px; //CAMBIAR EN MEDIA A SCREEN MEDIA O CHICA
-        height: 100%;
-        background-color: #440000;
-        color: antiquewhite;
-        border-radius: 11px;
-        border: 1.5px solid #630008;
-        box-shadow: 2px 3px 3px 2px #1d1d1d;
-        transition: all 0.4s ease-in-out;
-        img {
-            border-top-left-radius: 11px;
-            border-top-right-radius: 11px;
-        }
-        .card-body {
-            display: grid;
-            height: 200px;
-            padding: 12px 14px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: start;
-            align-items: flex-end;
-            h5 {
-                width: 100%;
-                font-weight: 600;
-            }
-            .card-text {
-                width: 100%;
-                height: 60px;
-                overflow-y: auto;
-                margin-bottom: 10px;
-                font-weight: 300;
-                margin-bottom: 3px;                
-                border-bottom: 1px solid #ccc;  // EN DUDA!!!
-            }
-            .verInfoText {
-                margin-bottom: 0px;
-                padding-top: 0px;
-                align-self: center;
-            }
-            button {
-                margin-left: auto;
-                transition: 0.2s;
-            }
-            button:active {
-                box-shadow: 0 3px #1d1d1d;
-                transform: translateY(3.5px);
-            }
-        }
-    }
-}
-.formDiv {
-    display: flex;
-    justify-content: center;
-}
-.finishButton {
-    width: 100%;
-    height: 140px;
-    padding: 25px 25px 0px 25px;
-    display: flex;
-    justify-content: center;
-    #finish {
-        margin-top: 5px;
-        font-size: 18px;
-        width: 165px;
-        height: 80px;
-        font-weight: 600;
-        background-color: rgba(250, 235, 215, 0.884);
-        color: #550108;
-        border: 1.5px solid #a40009;
-        box-shadow: 1px 1px 1px 1px #1d1d1d;
-        transition: all 0.4s;
-    }
-    #finish:hover {
-        background-color: #83000b;
-        box-shadow: 1px 2.5px 2.5px 1px #1d1d1d;
-        color: antiquewhite;
-    }
-    #finish:active {
-        background-color: #83000b;
-        box-shadow: 0 5px #1d1d1d;
-        transform: translateY(4px);
-        transition: 0.2s;
-    }
-}
-.shoppingCartBackground {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 70px;
-    padding-bottom: -30px;
-    .shopping-cart{
-        background-color:#630008;
-        color: antiquewhite;
-        border-radius: 11px;
-        border: 1.5px solid #a40009;
-        box-shadow: 1px 2px 2px 1px #1d1d1d;
-    }
-}
-
-.shopping-cart-items {
-    padding: 20px 0px;
-}
-
-.shopping-cart-header {
-    border-bottom: 1px solid #ccc;
-}
-
-.shopping-cart-image {
-    max-width: 80px;
-    border-radius: 20px;
-    margin-bottom: 5px;
-}
-
-.shopping-cart-quantity-input {
-    max-width: 50px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #eee;
-    padding: 5px;
-}
-
-.shopping-cart-total {
-    min-height: 96px;
-    border-bottom: 1px solid #ccc;
-}
-
-.searchFilter {
-    visibility: hidden;
-    opacity: 0;
-}
-.orderFirst {
-    order: 0;
 }
